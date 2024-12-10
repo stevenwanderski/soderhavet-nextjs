@@ -4,9 +4,6 @@ import Link from "next/link";
 export default async function Home() {
   const caseStudies = await getCaseStudies();
 
-  console.log(caseStudies);
-
-
   return (
     <div className="">
       <h1 className="font-bold text-2xl">Homepage.</h1>

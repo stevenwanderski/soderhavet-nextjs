@@ -29,7 +29,7 @@ export default async function SingleWorkPage({
         }
         width={width}
         height={height}
-        alt={caseStudy.image.alt || "case study image"}
+        alt="case study image"
         loading="lazy"
       />
     </div>
