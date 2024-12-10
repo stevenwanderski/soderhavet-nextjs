@@ -4,12 +4,10 @@ import { getImageDimensions } from "@sanity/asset-utils";
 import urlBuilder from "@sanity/image-url";
 import Image from "next/image";
 
-export default async function SingleWorkPage({ params }) {
+export default async function SingleWorkPage({ params }: { params: any }) {
   const { slug } = await params;
   const caseStudy = await getCaseStudyBySlug(slug);
   const { width, height } = getImageDimensions(caseStudy.image);
-
-  console.log(caseStudy);
 
   return (
     <div>
