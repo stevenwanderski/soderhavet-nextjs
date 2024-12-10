@@ -1,9 +1,8 @@
 export type CaseStudy = {
   _id: number,
   title: string,
-  slug: any,
+  slug: string,
   metadata: string,
-  image: any,
-  author: Author,
+  image: string,
   publishedAt: string,
 };
